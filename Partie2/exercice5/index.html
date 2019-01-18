@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <script src="jquery-3.3.1.min.js"></script>
+  <title>Exercice5</title>
+</head>
+<body>
+  <form>
+    <div><label for="lastName">Nom : </label><input type="text" name="lastName" id="lastName" /></div>
+    <div><label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" /></div>
+    <div><input type="submit" name="button" value"Envoyer" /></div>
+  </form>
+  <script>
+    $("input").focus(function(){ //.focus quand nous sommes dans l'encadrer
+      $(this).css("border", "1px solid green");
+    });
+    $("input").blur(function(){ //.blur correspond a quand nous somme plus dans l'encadrer (quand on perd le focus)
+      $(this).css("border","1px solid red");
+    });
+  </script>
+</body>
+</html>
